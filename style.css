@@ -35,18 +35,8 @@ a {
     font-size: 30px;
     font-weight: 900;
 }
-.hamburger, .remove-nav {
-    width: 50px;
-}
 .remove-nav {
     margin-left: auto;
-}
-.bar {
-    display: block;
-    margin: auto;
-    margin-bottom: 5px;
-    width: 80%;
-    border-bottom: 2px solid black;
 }
 .navbar {
     position: fixed;
@@ -138,6 +128,9 @@ a {
     max-width: 70px;
 }
 @media screen  and (max-width: 800px) {
+    header {
+        padding-block: 10px;
+    }
     .show-sub-navs .sub-navs {
         height:auto;
     }

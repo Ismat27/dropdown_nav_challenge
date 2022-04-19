@@ -2,7 +2,6 @@
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-
 ## Overview
 
 ### The challenge
@@ -15,14 +14,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/.jpg)
+![](./project_images/deskview.jpeg)
+![](./project_images/mobile_view1.jpeg)
+![](./project_images/mobile_view.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Ismat27/dropdown_nav_challenge](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
 
 ### Built with
 
