@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    color: hsl(0, 0%, 8%);
+    transition: 0.5s ease;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    background: hsl(0, 0%, 98%);
+}
+header {
+    padding: 0 25px;
+    margin-bottom: 10px;
+    
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.abc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+}
+.hamburger, .remove-nav {
+    width: 50px;
+}
+.remove-nav {
+    margin-left: auto;
+}
+.bar {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 80%;
+    border-bottom: 2px solid black;
+}
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+.show-nav {
+    width: 60%;
+    height: 100vh;
+    display: block ;
+}
+.navbar li {
+    padding: 10px;
+}
+.navbar::backdrop {
+    background-color: rgba(243, 234, 234, 0.06);
+}
+.sup-nav {
+    position: relative;
+}
+.sup-nav button {
+    background-color: inherit;
+    border: none;
+}
+.sup-nav span {
+    cursor: pointer;
+}
+.sub-navs { 
+    min-width: 200px;
+    padding: 10px 15px;
+    background: #fff;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.feature {
+    display: flex;
+    gap: 15px;
+}
+.register {
+    border: 1px solid hsl(0, 0%, 8%);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100px;
+}
+.register:hover, .login:hover {
+    background-color: hsl(0, 0%, 8%);
+    border: none;
+}
+.register:hover>a, .login:hover>a {
+    color: #fff;
+}
+.hero {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    line-height: 150%;
+    text-align: center;
+    padding-block: 10px;
+}
+.hero-header + p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+.hero .act-btn {
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.hero .act-btn:hover {
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+}
+.partners {
+    display: flex;
+    gap: 20px
+}
+.partners img {
+    max-width: 70px;
+}
+@media screen  and (max-width: 800px) {
+    .show-sub-navs .sub-navs {
+        height:auto;
+    }
+    .sup-nav .arrow-up {
+        display: none;
+    }
+    .show-sub-navs .arrow-down {
+        display: none;
+    }
+    .show-sub-navs .arrow-up {
+        display: inline-block;
+    }
+    .hero {
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen and (min-width: 800px) {
+    .hamburger, .remove-nav {
+        display: none;
+    }
+    .hero {
+        justify-content: space-around;
+        text-align: start;
+        align-items: end;
+    }
+    .hero img {
+        max-height: 500px;
+    }
+    .hero-header {
+        font-size: 50px;
+        max-width: 400px;
+        line-height: normal;
+    }
+    .hero-header+p {
+        max-width: 400px;
+    }
+    .hero .act-btn {
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+    }
+    .abc {
+        flex-basis: 10%;
+    }
+    .navbar {
+        height: auto;
+        position: initial;
+        background-color: initial;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 90%;
+    }
+    .navbar>ul {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+    }
+    .sub-navs {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 35px;
+        min-width: 200px;
+        display: none;
+        height: auto;
+    }
+    .first {
+        left: -90px;
+    }
+    .sup-nav .arrow-up {
+        display: none;
+    }
+    .sup-nav:hover .sub-navs,
+    .sup-nav:focus-within .sub-navs {
+        display: initial;
+    }
+    .sup-nav:hover .arrow-down {
+        transform: rotate(180deg);
+    }
+    
+}
