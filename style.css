@@ -75,7 +75,9 @@ a {
     padding: 0;
     overflow: hidden;
 }
-
+.arrow-down, .arrow-up, .hamburger, .remove-nav {
+    cursor: pointer;
+}
 .feature {
     display: flex;
     gap: 15px;
@@ -128,6 +130,9 @@ a {
     max-width: 70px;
 }
 @media screen  and (max-width: 800px) {
+    .overlay {
+        background-color: rgba(48, 49, 49, 0.5);
+    }
     header {
         padding-block: 10px;
     }

@@ -6,10 +6,12 @@ const navBar = document.querySelector('.navbar')
 const heroImage = document.querySelector('.hero-image')
 
 showBtn.addEventListener('click', ()=>{
+    document.body.classList.add('overlay')
     navBar.classList.add('show-nav')
 })
 
 removeBtn.addEventListener('click', ()=>{
+    document.body.classList.remove('overlay')
     navBar.classList.remove('show-nav')
 })
 
