@@ -111,11 +111,13 @@ a {
     cursor: pointer;
     background: black;
     color: white;
-    padding: 10px;
+    font-weight: bolder;
+    padding: 12px 18px;
     border-radius: 10px;
     border: none;
     margin-bottom: 40px;
     margin-top: 20px;
+    /* width: 150px; */
 }
 .hero .act-btn:hover {
     color: hsl(0, 0%, 8%);
