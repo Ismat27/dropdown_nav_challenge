@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Ismat27/dropdown_nav_challenge](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://sage-nav.netlify.app/)
+- Live Site URL: [https://sage-nav.netlify.app/](https://your-live-site-url.com)
 
 ### Built with
 
