@@ -177,6 +177,9 @@ a {
         margin-bottom: 80px;
         margin-top: 40px;
     }
+    .partners {
+        justify-content: space-between;
+    }
     header {
         display: flex;
         align-items: center;
