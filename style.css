@@ -124,7 +124,8 @@ a {
 }
 .partners {
     display: flex;
-    gap: 20px
+    justify-content: space-around;
+    /* gap: 20px */
 }
 .partners img {
     max-width: 70px;
